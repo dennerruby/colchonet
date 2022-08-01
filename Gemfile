@@ -54,6 +54,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'bcrypt-ruby', '~> 3.1', '>= 3.1.5'
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 
