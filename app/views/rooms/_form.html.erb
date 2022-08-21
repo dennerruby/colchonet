@@ -1,29 +1,26 @@
-<%= form_with(model: room) do |form| %>
   <% if room.errors.any? %>
-    <div style="color: red">
-      <h2><%= pluralize(room.errors.count, "error") %> prohibited this room from being saved:</h2>
-
-      <ul>
-        <% room.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
+    <div id="error_explamation">
+     Ha erros no formulario, por favor verifique.
     </div>
   <% end %>
 
+<%= form_with(model: room) do |form| %>
   <div>
-    <%= form.label :title, style: "display: block" %>
+    <%= form.label :title %>
     <%= form.text_field :title %>
+    <%= error_tag @room, :title %>
   </div>
 
   <div>
-    <%= form.label :location, style: "display: block" %>
+    <%= form.label :location %>
     <%= form.text_field :location %>
+    <%= error_tag @room, :location %>
   </div>
 
   <div>
-    <%= form.label :description, style: "display: block" %>
+    <%= form.label :description %>
     <%= form.text_area :description %>
+    <%= error_tag @room, :description %>
   </div>
 
   <div>
