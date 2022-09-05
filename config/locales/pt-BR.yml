@@ -1,0 +1,49 @@
+pt-BR:
+  rooms:
+    new:
+      rom_title: Novo quarto
+      links:
+      back_roms: Voltar aos quartos
+    edit:
+      edit_title: Editar esse quarto
+      show_thi_room: Ver esse quarto 
+      edit_rom: Editar quarto
+      back_roms: Voltar aos quartos
+
+
+  users:
+    new:
+      title: Cadastro
+      links:
+      back: Voltar
+    edit:
+      title: Editar perfil
+    show:
+      title: "Perfil: %{user_name}"
+      edit: 'Editar perfil'
+      location: "Localizacao: %{location}"
+      bio: "Bio: %{bio}"
+
+  links:
+    back: Voltar
+  layout:
+      rooms: Quartos
+      signup: Cadastro
+  general:
+    form_error: Ha erros no formulario, por favo da verifique esse merda !!
+              
+  activerecord:
+    models:
+      user: Usuario
+    attributes:
+      user:
+        bio: Biografia
+        email: Email
+        full_name: Nome completo
+        location: Localizacao
+        password: Senha
+        password_confirmation: Confirme sua senha
+      room:
+        description: Descricao
+        location: Localizacao
+        title: Titulo
