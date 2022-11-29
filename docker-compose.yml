@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  app:
+    ports:
+      - 3000:3000
+    build: .
+    volumes:
+      - .:/app
+    depends_on:
+      - mailcatcher
+
+  mailcatcher:
+    image: yappabe/mailcatcher
+    ports:
+      - 1025:1025
+      - 1080:1080
