@@ -6,10 +6,9 @@ pt-BR:
       back_roms: Voltar aos quartos
     edit:
       edit_title: Editar esse quarto
-      show_thi_room: Ver esse quarto 
+      show_thi_room: Ver esse quarto
       edit_rom: Editar quarto
       back_roms: Voltar aos quartos
-
 
   users:
     new:
@@ -31,7 +30,7 @@ pt-BR:
       signup: Cadastro
   general:
     form_error: Ha erros no formulario, por favo da verifique esse merda !!
-              
+
   activerecord:
     models:
       user: Usuario
@@ -47,3 +46,14 @@ pt-BR:
         description: Descricao
         location: Localizacao
         title: Titulo
+
+  signup_mailer:
+    confirm_email:
+      subject: 'Colcho.net - Confirme seu email'
+      title: 'Seja bem vindo ao Colchonet !'
+      body: '|
+          Seja bom vindo ao Colcho.net, %{full_name},
+          O Colcho.net e o lugar ideal para voce alugar aquele quarto
+          sobrando na sua casa e ainda conhecer gete do mundo inteiro.'
+    confirm_link_html: 'Para voce comeca a usar a site acesse o link%{link}'
+    thanks_html: 'Obrigado por se cadastrar no %{link}'
