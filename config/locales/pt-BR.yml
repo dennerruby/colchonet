@@ -19,15 +19,15 @@ pt-BR:
       title: Editar perfil
     show:
       title: "Perfil: %{user_name}"
-      edit: 'Editar perfil'
+      edit: "Editar perfil"
       location: "Localizacao: %{location}"
       bio: "Bio: %{bio}"
 
   links:
     back: Voltar
   layout:
-      rooms: Quartos
-      signup: Cadastro
+    rooms: Quartos
+    signup: Cadastro
   general:
     form_error: Ha erros no formulario, por favo da verifique esse merda !!
 
@@ -49,11 +49,11 @@ pt-BR:
 
   signup_mailer:
     confirm_email:
-      subject: 'Colcho.net - Confirme seu email'
-      title: 'Seja bem vindo ao Colchonet !'
-      body: '|
-          Seja bom vindo ao Colcho.net, %{full_name},
-          O Colcho.net e o lugar ideal para voce alugar aquele quarto
-          sobrando na sua casa e ainda conhecer gete do mundo inteiro.'
-    confirm_link_html: 'Para voce comeca a usar a site acesse o link%{link}'
-    thanks_html: 'Obrigado por se cadastrar no %{link}'
+      subject: "Colcho.net - Confirme seu email"
+      title: "Seja bem vindo ao Colchonet !"
+      body: "
+        Seja bom vindo ao Colcho.net, %{full_name},
+        O Colcho.net e o lugar ideal para voce alugar aquele quarto
+        sobrando na sua casa e ainda conhecer gete do mundo inteiro."
+      confirm_link_html: "Para voce comeca a usar a site acesse o link%{link}"
+      thanks_html: "Obrigado por se cadastrar no%{link}"
