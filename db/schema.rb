@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_07_29_014406) do
+ActiveRecord::Schema[7.0].define(version: 2023_01_05_015049) do
   create_table "rooms", force: :cascade do |t|
     t.string "title"
     t.string "location"
@@ -27,6 +27,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_07_29_014406) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "password_digest"
+    t.datetime "confirmend_at"
+    t.string "confirmation_token"
+    t.datetime "confirmed_at"
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 
