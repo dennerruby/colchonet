@@ -7,4 +7,20 @@ class User < ActiveRecord::Base
                       uniqueness: true
 
     has_secure_password
+
+    before_create do |user|
+      user.confirmation_token = SecureRandom.urlsafe_base64
+    end
+
+    def confirm!
+      return if confirmend?
+
+        self.confirmend_at = Time.current
+        self.confirmation_token  = ''
+        save!
+    end
+
+    def confirmend?
+      confirmend_at.present?
+    end
 end
