@@ -1,4 +1,6 @@
 pt-BR:
+  confirmations:
+    success: Email confirmado com sucesso, obrigado!
   rooms:
     new:
       rom_title: Novo quarto
