@@ -29,7 +29,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_01_05_015049) do
     t.string "password_digest"
     t.datetime "confirmend_at"
     t.string "confirmation_token"
-    t.datetime "confirmed_at"
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 
